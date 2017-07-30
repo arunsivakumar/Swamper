@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		408C53CF1F2DA2AC000E0214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C53CE1F2DA2AC000E0214 /* AppDelegate.swift */; };
+		408C53D11F2DA2AC000E0214 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C53D01F2DA2AC000E0214 /* ViewController.swift */; };
+		408C53D41F2DA2AC000E0214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408C53D21F2DA2AC000E0214 /* Main.storyboard */; };
+		408C53D61F2DA2AC000E0214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408C53D51F2DA2AC000E0214 /* Assets.xcassets */; };
+		408C53D91F2DA2AC000E0214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408C53D71F2DA2AC000E0214 /* LaunchScreen.storyboard */; };
+		408C53E41F2DA2AC000E0214 /* SwamperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C53E31F2DA2AC000E0214 /* SwamperTests.swift */; };
+		408C53EF1F2DA2AC000E0214 /* SwamperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C53EE1F2DA2AC000E0214 /* SwamperUITests.swift */; };
+		408C53FD1F2DA76E000E0214 /* EntityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C53FC1F2DA76E000E0214 /* EntityView.swift */; };
+		408C53FF1F2DBEF2000E0214 /* EntityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C53FE1F2DBEF2000E0214 /* EntityButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		408C53E01F2DA2AC000E0214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 408C53C31F2DA2AC000E0214 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 408C53CA1F2DA2AC000E0214;
+			remoteInfo = Swamper;
+		};
+		408C53EB1F2DA2AC000E0214 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 408C53C31F2DA2AC000E0214 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 408C53CA1F2DA2AC000E0214;
+			remoteInfo = Swamper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		408C53CB1F2DA2AC000E0214 /* Swamper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swamper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		408C53CE1F2DA2AC000E0214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		408C53D01F2DA2AC000E0214 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		408C53D31F2DA2AC000E0214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		408C53D51F2DA2AC000E0214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		408C53D81F2DA2AC000E0214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		408C53DA1F2DA2AC000E0214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		408C53DF1F2DA2AC000E0214 /* SwamperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwamperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		408C53E31F2DA2AC000E0214 /* SwamperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwamperTests.swift; sourceTree = "<group>"; };
+		408C53E51F2DA2AC000E0214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		408C53EA1F2DA2AC000E0214 /* SwamperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwamperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		408C53EE1F2DA2AC000E0214 /* SwamperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwamperUITests.swift; sourceTree = "<group>"; };
+		408C53F01F2DA2AC000E0214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		408C53FC1F2DA76E000E0214 /* EntityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityView.swift; sourceTree = "<group>"; };
+		408C53FE1F2DBEF2000E0214 /* EntityButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		408C53C81F2DA2AC000E0214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408C53DC1F2DA2AC000E0214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408C53E71F2DA2AC000E0214 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		408C53C21F2DA2AC000E0214 = {
+			isa = PBXGroup;
+			children = (
+				408C53CD1F2DA2AC000E0214 /* Swamper */,
+				408C53E21F2DA2AC000E0214 /* SwamperTests */,
+				408C53ED1F2DA2AC000E0214 /* SwamperUITests */,
+				408C53CC1F2DA2AC000E0214 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		408C53CC1F2DA2AC000E0214 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				408C53CB1F2DA2AC000E0214 /* Swamper.app */,
+				408C53DF1F2DA2AC000E0214 /* SwamperTests.xctest */,
+				408C53EA1F2DA2AC000E0214 /* SwamperUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		408C53CD1F2DA2AC000E0214 /* Swamper */ = {
+			isa = PBXGroup;
+			children = (
+				408C53CE1F2DA2AC000E0214 /* AppDelegate.swift */,
+				408C53D01F2DA2AC000E0214 /* ViewController.swift */,
+				408C53D21F2DA2AC000E0214 /* Main.storyboard */,
+				408C53D51F2DA2AC000E0214 /* Assets.xcassets */,
+				408C53D71F2DA2AC000E0214 /* LaunchScreen.storyboard */,
+				408C53DA1F2DA2AC000E0214 /* Info.plist */,
+				408C53FC1F2DA76E000E0214 /* EntityView.swift */,
+				408C53FE1F2DBEF2000E0214 /* EntityButton.swift */,
+			);
+			path = Swamper;
+			sourceTree = "<group>";
+		};
+		408C53E21F2DA2AC000E0214 /* SwamperTests */ = {
+			isa = PBXGroup;
+			children = (
+				408C53E31F2DA2AC000E0214 /* SwamperTests.swift */,
+				408C53E51F2DA2AC000E0214 /* Info.plist */,
+			);
+			path = SwamperTests;
+			sourceTree = "<group>";
+		};
+		408C53ED1F2DA2AC000E0214 /* SwamperUITests */ = {
+			isa = PBXGroup;
+			children = (
+				408C53EE1F2DA2AC000E0214 /* SwamperUITests.swift */,
+				408C53F01F2DA2AC000E0214 /* Info.plist */,
+			);
+			path = SwamperUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		408C53CA1F2DA2AC000E0214 /* Swamper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 408C53F31F2DA2AC000E0214 /* Build configuration list for PBXNativeTarget "Swamper" */;
+			buildPhases = (
+				408C53C71F2DA2AC000E0214 /* Sources */,
+				408C53C81F2DA2AC000E0214 /* Frameworks */,
+				408C53C91F2DA2AC000E0214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Swamper;
+			productName = Swamper;
+			productReference = 408C53CB1F2DA2AC000E0214 /* Swamper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		408C53DE1F2DA2AC000E0214 /* SwamperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 408C53F61F2DA2AC000E0214 /* Build configuration list for PBXNativeTarget "SwamperTests" */;
+			buildPhases = (
+				408C53DB1F2DA2AC000E0214 /* Sources */,
+				408C53DC1F2DA2AC000E0214 /* Frameworks */,
+				408C53DD1F2DA2AC000E0214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				408C53E11F2DA2AC000E0214 /* PBXTargetDependency */,
+			);
+			name = SwamperTests;
+			productName = SwamperTests;
+			productReference = 408C53DF1F2DA2AC000E0214 /* SwamperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		408C53E91F2DA2AC000E0214 /* SwamperUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 408C53F91F2DA2AC000E0214 /* Build configuration list for PBXNativeTarget "SwamperUITests" */;
+			buildPhases = (
+				408C53E61F2DA2AC000E0214 /* Sources */,
+				408C53E71F2DA2AC000E0214 /* Frameworks */,
+				408C53E81F2DA2AC000E0214 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				408C53EC1F2DA2AC000E0214 /* PBXTargetDependency */,
+			);
+			name = SwamperUITests;
+			productName = SwamperUITests;
+			productReference = 408C53EA1F2DA2AC000E0214 /* SwamperUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		408C53C31F2DA2AC000E0214 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = com.arunsivakumar;
+				TargetAttributes = {
+					408C53CA1F2DA2AC000E0214 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Q5S947L7K7;
+						ProvisioningStyle = Automatic;
+					};
+					408C53DE1F2DA2AC000E0214 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Q5S947L7K7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 408C53CA1F2DA2AC000E0214;
+					};
+					408C53E91F2DA2AC000E0214 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = Q5S947L7K7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 408C53CA1F2DA2AC000E0214;
+					};
+				};
+			};
+			buildConfigurationList = 408C53C61F2DA2AC000E0214 /* Build configuration list for PBXProject "Swamper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 408C53C21F2DA2AC000E0214;
+			productRefGroup = 408C53CC1F2DA2AC000E0214 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				408C53CA1F2DA2AC000E0214 /* Swamper */,
+				408C53DE1F2DA2AC000E0214 /* SwamperTests */,
+				408C53E91F2DA2AC000E0214 /* SwamperUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		408C53C91F2DA2AC000E0214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408C53D91F2DA2AC000E0214 /* LaunchScreen.storyboard in Resources */,
+				408C53D61F2DA2AC000E0214 /* Assets.xcassets in Resources */,
+				408C53D41F2DA2AC000E0214 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408C53DD1F2DA2AC000E0214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408C53E81F2DA2AC000E0214 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		408C53C71F2DA2AC000E0214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408C53FD1F2DA76E000E0214 /* EntityView.swift in Sources */,
+				408C53D11F2DA2AC000E0214 /* ViewController.swift in Sources */,
+				408C53FF1F2DBEF2000E0214 /* EntityButton.swift in Sources */,
+				408C53CF1F2DA2AC000E0214 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408C53DB1F2DA2AC000E0214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408C53E41F2DA2AC000E0214 /* SwamperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		408C53E61F2DA2AC000E0214 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				408C53EF1F2DA2AC000E0214 /* SwamperUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		408C53E11F2DA2AC000E0214 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 408C53CA1F2DA2AC000E0214 /* Swamper */;
+			targetProxy = 408C53E01F2DA2AC000E0214 /* PBXContainerItemProxy */;
+		};
+		408C53EC1F2DA2AC000E0214 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 408C53CA1F2DA2AC000E0214 /* Swamper */;
+			targetProxy = 408C53EB1F2DA2AC000E0214 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		408C53D21F2DA2AC000E0214 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				408C53D31F2DA2AC000E0214 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		408C53D71F2DA2AC000E0214 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				408C53D81F2DA2AC000E0214 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		408C53F11F2DA2AC000E0214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		408C53F21F2DA2AC000E0214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		408C53F41F2DA2AC000E0214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q5S947L7K7;
+				INFOPLIST_FILE = Swamper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arunsivakumar.Swamper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		408C53F51F2DA2AC000E0214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q5S947L7K7;
+				INFOPLIST_FILE = Swamper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arunsivakumar.Swamper;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		408C53F71F2DA2AC000E0214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Q5S947L7K7;
+				INFOPLIST_FILE = SwamperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arunsivakumar.SwamperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swamper.app/Swamper";
+			};
+			name = Debug;
+		};
+		408C53F81F2DA2AC000E0214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Q5S947L7K7;
+				INFOPLIST_FILE = SwamperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arunsivakumar.SwamperTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Swamper.app/Swamper";
+			};
+			name = Release;
+		};
+		408C53FA1F2DA2AC000E0214 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Q5S947L7K7;
+				INFOPLIST_FILE = SwamperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arunsivakumar.SwamperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Swamper;
+			};
+			name = Debug;
+		};
+		408C53FB1F2DA2AC000E0214 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Q5S947L7K7;
+				INFOPLIST_FILE = SwamperUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arunsivakumar.SwamperUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Swamper;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		408C53C61F2DA2AC000E0214 /* Build configuration list for PBXProject "Swamper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408C53F11F2DA2AC000E0214 /* Debug */,
+				408C53F21F2DA2AC000E0214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		408C53F31F2DA2AC000E0214 /* Build configuration list for PBXNativeTarget "Swamper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408C53F41F2DA2AC000E0214 /* Debug */,
+				408C53F51F2DA2AC000E0214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		408C53F61F2DA2AC000E0214 /* Build configuration list for PBXNativeTarget "SwamperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408C53F71F2DA2AC000E0214 /* Debug */,
+				408C53F81F2DA2AC000E0214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		408C53F91F2DA2AC000E0214 /* Build configuration list for PBXNativeTarget "SwamperUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				408C53FA1F2DA2AC000E0214 /* Debug */,
+				408C53FB1F2DA2AC000E0214 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 408C53C31F2DA2AC000E0214 /* Project object */;
+}
