@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4048725B1F2E948F00AC229C /* EntityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404872561F2E948F00AC229C /* EntityButton.swift */; };
+		4048725C1F2E948F00AC229C /* EntityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404872571F2E948F00AC229C /* EntityView.swift */; };
+		404872601F2E94FC00AC229C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4048725F1F2E94FC00AC229C /* Main.storyboard */; };
+		404872641F2E953600AC229C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404872621F2E953600AC229C /* HomeViewController.swift */; };
 		408C53CF1F2DA2AC000E0214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C53CE1F2DA2AC000E0214 /* AppDelegate.swift */; };
-		408C53D11F2DA2AC000E0214 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C53D01F2DA2AC000E0214 /* ViewController.swift */; };
-		408C53D41F2DA2AC000E0214 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408C53D21F2DA2AC000E0214 /* Main.storyboard */; };
 		408C53D61F2DA2AC000E0214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408C53D51F2DA2AC000E0214 /* Assets.xcassets */; };
 		408C53D91F2DA2AC000E0214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408C53D71F2DA2AC000E0214 /* LaunchScreen.storyboard */; };
 		408C53E41F2DA2AC000E0214 /* SwamperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C53E31F2DA2AC000E0214 /* SwamperTests.swift */; };
 		408C53EF1F2DA2AC000E0214 /* SwamperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C53EE1F2DA2AC000E0214 /* SwamperUITests.swift */; };
-		408C53FD1F2DA76E000E0214 /* EntityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C53FC1F2DA76E000E0214 /* EntityView.swift */; };
-		408C53FF1F2DBEF2000E0214 /* EntityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C53FE1F2DBEF2000E0214 /* EntityButton.swift */; };
+		671AC098815A09088FF8D726 /* Pods_Swamper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 29918A9AA7FD2017589EF95D /* Pods_Swamper.framework */; };
+		76415EE12DCEE7C101987231 /* Pods_SwamperTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38C9D06272FEC9403BA77F89 /* Pods_SwamperTests.framework */; };
+		7BD3AA47BED113625F0AED12 /* Pods_SwamperUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 54FC76E6F6C521BB3995BEBF /* Pods_SwamperUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +39,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0988238374436FAC061E3BBC /* Pods-Swamper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swamper.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swamper/Pods-Swamper.release.xcconfig"; sourceTree = "<group>"; };
+		29918A9AA7FD2017589EF95D /* Pods_Swamper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swamper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38C9D06272FEC9403BA77F89 /* Pods_SwamperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwamperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C61BF620E90AAE777825E34 /* Pods-SwamperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwamperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwamperUITests/Pods-SwamperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		404872561F2E948F00AC229C /* EntityButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityButton.swift; sourceTree = "<group>"; };
+		404872571F2E948F00AC229C /* EntityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityView.swift; sourceTree = "<group>"; };
+		4048725F1F2E94FC00AC229C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		404872621F2E953600AC229C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		408C53CB1F2DA2AC000E0214 /* Swamper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swamper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408C53CE1F2DA2AC000E0214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		408C53D01F2DA2AC000E0214 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		408C53D31F2DA2AC000E0214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		408C53D51F2DA2AC000E0214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		408C53D81F2DA2AC000E0214 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		408C53DA1F2DA2AC000E0214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,8 +58,11 @@
 		408C53EA1F2DA2AC000E0214 /* SwamperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwamperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		408C53EE1F2DA2AC000E0214 /* SwamperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwamperUITests.swift; sourceTree = "<group>"; };
 		408C53F01F2DA2AC000E0214 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		408C53FC1F2DA76E000E0214 /* EntityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityView.swift; sourceTree = "<group>"; };
-		408C53FE1F2DBEF2000E0214 /* EntityButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntityButton.swift; sourceTree = "<group>"; };
+		4995E187CFFD7DE0753ED0F4 /* Pods-SwamperTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwamperTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwamperTests/Pods-SwamperTests.debug.xcconfig"; sourceTree = "<group>"; };
+		504A69CDED7EE5C87B807276 /* Pods-Swamper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swamper.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swamper/Pods-Swamper.debug.xcconfig"; sourceTree = "<group>"; };
+		54FC76E6F6C521BB3995BEBF /* Pods_SwamperUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwamperUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7917771E886ADF3EF06EBAC7 /* Pods-SwamperTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwamperTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwamperTests/Pods-SwamperTests.release.xcconfig"; sourceTree = "<group>"; };
+		B4FFE91E81AF8E4687B5BB2D /* Pods-SwamperUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwamperUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwamperUITests/Pods-SwamperUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				671AC098815A09088FF8D726 /* Pods_Swamper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76415EE12DCEE7C101987231 /* Pods_SwamperTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +86,70 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BD3AA47BED113625F0AED12 /* Pods_SwamperUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		404872551F2E948F00AC229C /* CustomItems */ = {
+			isa = PBXGroup;
+			children = (
+				404872561F2E948F00AC229C /* EntityButton.swift */,
+				404872571F2E948F00AC229C /* EntityView.swift */,
+			);
+			path = CustomItems;
+			sourceTree = "<group>";
+		};
+		404872581F2E948F00AC229C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4048725D1F2E94DC00AC229C /* Supportingfiles */ = {
+			isa = PBXGroup;
+			children = (
+				408C53CE1F2DA2AC000E0214 /* AppDelegate.swift */,
+				408C53D51F2DA2AC000E0214 /* Assets.xcassets */,
+				408C53D71F2DA2AC000E0214 /* LaunchScreen.storyboard */,
+				408C53DA1F2DA2AC000E0214 /* Info.plist */,
+			);
+			name = Supportingfiles;
+			sourceTree = "<group>";
+		};
+		4048725E1F2E94FC00AC229C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4048725F1F2E94FC00AC229C /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		404872611F2E953600AC229C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				404872621F2E953600AC229C /* HomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		404872631F2E953600AC229C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		404872651F2E954100AC229C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		408C53C21F2DA2AC000E0214 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +157,8 @@
 				408C53E21F2DA2AC000E0214 /* SwamperTests */,
 				408C53ED1F2DA2AC000E0214 /* SwamperUITests */,
 				408C53CC1F2DA2AC000E0214 /* Products */,
+				9ED17A5DD50219C5DB562A6F /* Pods */,
+				7DA6A85AAF31339D8BC25E19 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,14 +175,13 @@
 		408C53CD1F2DA2AC000E0214 /* Swamper */ = {
 			isa = PBXGroup;
 			children = (
-				408C53CE1F2DA2AC000E0214 /* AppDelegate.swift */,
-				408C53D01F2DA2AC000E0214 /* ViewController.swift */,
-				408C53D21F2DA2AC000E0214 /* Main.storyboard */,
-				408C53D51F2DA2AC000E0214 /* Assets.xcassets */,
-				408C53D71F2DA2AC000E0214 /* LaunchScreen.storyboard */,
-				408C53DA1F2DA2AC000E0214 /* Info.plist */,
-				408C53FC1F2DA76E000E0214 /* EntityView.swift */,
-				408C53FE1F2DBEF2000E0214 /* EntityButton.swift */,
+				404872651F2E954100AC229C /* Models */,
+				404872611F2E953600AC229C /* Controllers */,
+				404872631F2E953600AC229C /* Views */,
+				4048725E1F2E94FC00AC229C /* Storyboards */,
+				404872551F2E948F00AC229C /* CustomItems */,
+				404872581F2E948F00AC229C /* Helpers */,
+				4048725D1F2E94DC00AC229C /* Supportingfiles */,
 			);
 			path = Swamper;
 			sourceTree = "<group>";
@@ -131,6 +204,29 @@
 			path = SwamperUITests;
 			sourceTree = "<group>";
 		};
+		7DA6A85AAF31339D8BC25E19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				29918A9AA7FD2017589EF95D /* Pods_Swamper.framework */,
+				38C9D06272FEC9403BA77F89 /* Pods_SwamperTests.framework */,
+				54FC76E6F6C521BB3995BEBF /* Pods_SwamperUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9ED17A5DD50219C5DB562A6F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				504A69CDED7EE5C87B807276 /* Pods-Swamper.debug.xcconfig */,
+				0988238374436FAC061E3BBC /* Pods-Swamper.release.xcconfig */,
+				4995E187CFFD7DE0753ED0F4 /* Pods-SwamperTests.debug.xcconfig */,
+				7917771E886ADF3EF06EBAC7 /* Pods-SwamperTests.release.xcconfig */,
+				B4FFE91E81AF8E4687B5BB2D /* Pods-SwamperUITests.debug.xcconfig */,
+				3C61BF620E90AAE777825E34 /* Pods-SwamperUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,9 +234,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 408C53F31F2DA2AC000E0214 /* Build configuration list for PBXNativeTarget "Swamper" */;
 			buildPhases = (
+				D50EDF8D09964B6147E07ADB /* [CP] Check Pods Manifest.lock */,
 				408C53C71F2DA2AC000E0214 /* Sources */,
 				408C53C81F2DA2AC000E0214 /* Frameworks */,
 				408C53C91F2DA2AC000E0214 /* Resources */,
+				F00778572FC0904289F5917F /* [CP] Embed Pods Frameworks */,
+				87446D37A43B5EF5EFC4CBFE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -155,9 +254,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 408C53F61F2DA2AC000E0214 /* Build configuration list for PBXNativeTarget "SwamperTests" */;
 			buildPhases = (
+				39C3EBFC189691B66A87BDC3 /* [CP] Check Pods Manifest.lock */,
 				408C53DB1F2DA2AC000E0214 /* Sources */,
 				408C53DC1F2DA2AC000E0214 /* Frameworks */,
 				408C53DD1F2DA2AC000E0214 /* Resources */,
+				EFB8390AC127DCAF58621E84 /* [CP] Embed Pods Frameworks */,
+				1540CBCC38214338F8BCFFC1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -173,9 +275,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 408C53F91F2DA2AC000E0214 /* Build configuration list for PBXNativeTarget "SwamperUITests" */;
 			buildPhases = (
+				6B18AC32C1DFC9C427FF9DC8 /* [CP] Check Pods Manifest.lock */,
 				408C53E61F2DA2AC000E0214 /* Sources */,
 				408C53E71F2DA2AC000E0214 /* Frameworks */,
 				408C53E81F2DA2AC000E0214 /* Resources */,
+				A718F6D3C1A289CA0D275B9D /* [CP] Embed Pods Frameworks */,
+				9B9AE2348FC8AF16187D9438 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,9 +346,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				404872601F2E94FC00AC229C /* Main.storyboard in Resources */,
 				408C53D91F2DA2AC000E0214 /* LaunchScreen.storyboard in Resources */,
 				408C53D61F2DA2AC000E0214 /* Assets.xcassets in Resources */,
-				408C53D41F2DA2AC000E0214 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,15 +368,153 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1540CBCC38214338F8BCFFC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwamperTests/Pods-SwamperTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39C3EBFC189691B66A87BDC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6B18AC32C1DFC9C427FF9DC8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		87446D37A43B5EF5EFC4CBFE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swamper/Pods-Swamper-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9B9AE2348FC8AF16187D9438 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwamperUITests/Pods-SwamperUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A718F6D3C1A289CA0D275B9D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwamperUITests/Pods-SwamperUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D50EDF8D09964B6147E07ADB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		EFB8390AC127DCAF58621E84 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwamperTests/Pods-SwamperTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F00778572FC0904289F5917F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swamper/Pods-Swamper-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		408C53C71F2DA2AC000E0214 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				408C53FD1F2DA76E000E0214 /* EntityView.swift in Sources */,
-				408C53D11F2DA2AC000E0214 /* ViewController.swift in Sources */,
-				408C53FF1F2DBEF2000E0214 /* EntityButton.swift in Sources */,
+				4048725B1F2E948F00AC229C /* EntityButton.swift in Sources */,
 				408C53CF1F2DA2AC000E0214 /* AppDelegate.swift in Sources */,
+				404872641F2E953600AC229C /* HomeViewController.swift in Sources */,
+				4048725C1F2E948F00AC229C /* EntityView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,14 +550,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		408C53D21F2DA2AC000E0214 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				408C53D31F2DA2AC000E0214 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		408C53D71F2DA2AC000E0214 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -421,6 +656,7 @@
 		};
 		408C53F41F2DA2AC000E0214 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 504A69CDED7EE5C87B807276 /* Pods-Swamper.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q5S947L7K7;
@@ -434,6 +670,7 @@
 		};
 		408C53F51F2DA2AC000E0214 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0988238374436FAC061E3BBC /* Pods-Swamper.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = Q5S947L7K7;
@@ -447,6 +684,7 @@
 		};
 		408C53F71F2DA2AC000E0214 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4995E187CFFD7DE0753ED0F4 /* Pods-SwamperTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -462,6 +700,7 @@
 		};
 		408C53F81F2DA2AC000E0214 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7917771E886ADF3EF06EBAC7 /* Pods-SwamperTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -477,6 +716,7 @@
 		};
 		408C53FA1F2DA2AC000E0214 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B4FFE91E81AF8E4687B5BB2D /* Pods-SwamperUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q5S947L7K7;
@@ -491,6 +731,7 @@
 		};
 		408C53FB1F2DA2AC000E0214 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C61BF620E90AAE777825E34 /* Pods-SwamperUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = Q5S947L7K7;
