@@ -10,6 +10,9 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    var photoStore = PhotoStore()
+    var imageStore = ImageStore()
+    
     @IBOutlet weak var notesCountLabel: UILabel!
     @IBOutlet weak var websitesCountLabel: UILabel!
     @IBOutlet weak var cardsCountLabel: UILabel!
@@ -19,6 +22,12 @@ class HomeViewController: UIViewController {
     
     @IBAction func openNotes(_ sender: UITapGestureRecognizer) {
         performSegue(withIdentifier: "showNotes", sender: self)
+    }
+    @IBAction func openPhotos(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "showPhotos", sender: self)
+    }
+    @IBAction func showSketches(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "showSketches", sender: self)
     }
 
     override func viewDidLoad() {
@@ -35,3 +44,26 @@ class HomeViewController: UIViewController {
     }
 }
 
+
+//MARK:- Navigation
+extension HomeViewController{
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "showNotes"?:
+           break
+        case "showPhotos"?:
+            let vc =
+                segue.destination as! PhotosViewController
+            vc.photoStore = photoStore
+             vc.imageStore = imageStore
+        case "showSketches"?: break
+        default:
+            preconditionFailure("Unexpected segue identifier.")
+        }
+    }
+    
+    @IBAction func unwindToNotes(segue: UIStoryboardSegue) {
+        
+    }
+}
