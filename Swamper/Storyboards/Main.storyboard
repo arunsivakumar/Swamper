@@ -84,6 +84,7 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.89338332409999999" green="0.61131191250000005" blue="0.357768476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstItem="AVC-L4-atc" firstAttribute="top" secondItem="TH3-yt-1ZV" secondAttribute="top" constant="20" symbolic="YES" id="5LI-hv-jCc"/>
                                             <constraint firstAttribute="trailing" secondItem="9rE-6r-A60" secondAttribute="trailing" constant="20" symbolic="YES" id="9Dz-57-5Zd"/>
@@ -92,6 +93,9 @@
                                             <constraint firstItem="9rE-6r-A60" firstAttribute="leading" secondItem="TH3-yt-1ZV" secondAttribute="leading" constant="20" symbolic="YES" id="Irk-BU-6rO"/>
                                             <constraint firstAttribute="trailing" secondItem="AVC-L4-atc" secondAttribute="trailing" constant="20" symbolic="YES" id="MSt-sk-k3w"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="pFj-gp-Zzw" appends="YES" id="3IP-t6-Mg3"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qrh-Rh-tnJ" customClass="EntityView" customModule="Swamper" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="405.33333333333326" width="342" height="170.66666666666674"/>
@@ -116,6 +120,7 @@
                                             </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.92083334920000004" green="0.80403292179999997" blue="0.43133175369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="bottom" secondItem="7Vf-dc-6vx" secondAttribute="bottom" constant="20" symbolic="YES" id="BaK-zj-eub"/>
                                             <constraint firstAttribute="trailing" secondItem="7Vf-dc-6vx" secondAttribute="trailing" constant="20" symbolic="YES" id="DCJ-R8-tSf"/>
@@ -124,6 +129,9 @@
                                             <constraint firstAttribute="trailing" secondItem="VUT-EN-neS" secondAttribute="trailing" constant="20" symbolic="YES" id="Nda-Bi-ClL"/>
                                             <constraint firstItem="7Vf-dc-6vx" firstAttribute="leading" secondItem="Qrh-Rh-tnJ" secondAttribute="leading" constant="20" symbolic="YES" id="X59-on-thJ"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="9Ra-Lu-Ia4" appends="YES" id="JVi-Cf-qYe"/>
+                                        </connections>
                                     </view>
                                 </subviews>
                             </stackView>
@@ -152,6 +160,8 @@
                         <action selector="openNotes:" destination="BYZ-38-t0r" id="40e-iW-EtZ"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="pFj-gp-Zzw"/>
+                <tapGestureRecognizer id="9Ra-Lu-Ia4"/>
             </objects>
             <point key="canvasLocation" x="896.79999999999995" y="-537.48125937031489"/>
         </scene>
@@ -219,7 +229,7 @@
                                             <outlet property="contentLabel" destination="t11-Bt-Hj1" id="Z4G-AD-V0c"/>
                                             <outlet property="dateLabel" destination="lAi-MN-nF8" id="JV3-9b-l5O"/>
                                             <outlet property="titleLabel" destination="JDM-yB-UAQ" id="aX4-9W-fgf"/>
-                                            <segue destination="CvW-qS-mzV" kind="show" identifier="addNote" id="i57-2q-TBU"/>
+                                            <segue destination="CvW-qS-mzV" kind="show" identifier="showNote" id="i57-2q-TBU"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -232,7 +242,8 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="RDP-oi-qy2">
                             <color key="tintColor" red="0.89338332409999999" green="0.61131191250000005" blue="0.357768476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
-                                <segue destination="CvW-qS-mzV" kind="show" identifier="AddNote" id="E9c-sk-aep"/>
+                                <action selector="addNote:" destination="qhk-am-XNM" id="jNR-eg-vu9"/>
+                                <segue destination="CvW-qS-mzV" kind="show" identifier="addNote" id="E9c-sk-aep"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -373,10 +384,10 @@
             </objects>
             <point key="canvasLocation" x="1554" y="868"/>
         </scene>
-        <!--Add Notes View Vontroller-->
+        <!--Add Note View Controller-->
         <scene sceneID="zpu-Fb-G68">
             <objects>
-                <viewController id="CvW-qS-mzV" customClass="AddNotesViewVontroller" customModule="Swamper" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="CvW-qS-mzV" customClass="AddNoteViewController" customModule="Swamper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JJX-cQ-FVC"/>
                         <viewControllerLayoutGuide type="bottom" id="hxZ-J2-VK5"/>
@@ -385,30 +396,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q6b-D5-mXD">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Title" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q6b-D5-mXD">
                                 <rect key="frame" x="14" y="90" width="380" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="EIo-BE-G32"/>
+                                </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="24"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Content" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y1U-1p-WuZ">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6GR-2d-QYM">
+                                <rect key="frame" x="14" y="128" width="380" height="1"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="xsF-nO-wOS"/>
+                                </constraints>
+                            </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Y1U-1p-WuZ">
                                 <rect key="frame" x="14" y="136" width="380" height="391"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.4039215686" green="0.39607843139999999" blue="0.42352941179999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="6GR-2d-QYM" firstAttribute="leading" secondItem="Q6b-D5-mXD" secondAttribute="leading" id="FVK-5A-S6U"/>
+                            <constraint firstItem="Y1U-1p-WuZ" firstAttribute="leading" secondItem="6GR-2d-QYM" secondAttribute="leading" id="H5B-DM-zxA"/>
+                            <constraint firstItem="Q6b-D5-mXD" firstAttribute="trailing" secondItem="qLw-eR-wwx" secondAttribute="trailingMargin" id="HG8-qP-08I"/>
+                            <constraint firstItem="6GR-2d-QYM" firstAttribute="trailing" secondItem="Q6b-D5-mXD" secondAttribute="trailing" id="Nk6-xv-7k7"/>
+                            <constraint firstItem="Y1U-1p-WuZ" firstAttribute="trailing" secondItem="6GR-2d-QYM" secondAttribute="trailing" id="QiF-zc-XHp"/>
+                            <constraint firstAttribute="bottom" secondItem="6GR-2d-QYM" secondAttribute="bottom" constant="607" id="bK9-SE-Iop"/>
+                            <constraint firstItem="6GR-2d-QYM" firstAttribute="top" secondItem="Q6b-D5-mXD" secondAttribute="bottom" constant="8" symbolic="YES" id="lnQ-H4-CAH"/>
+                            <constraint firstItem="hxZ-J2-VK5" firstAttribute="top" secondItem="Y1U-1p-WuZ" secondAttribute="bottom" constant="165" id="p6w-1o-7f9"/>
+                            <constraint firstItem="Q6b-D5-mXD" firstAttribute="top" secondItem="JJX-cQ-FVC" secondAttribute="bottom" constant="26" id="swE-RT-3Cq"/>
+                            <constraint firstItem="Q6b-D5-mXD" firstAttribute="leading" secondItem="qLw-eR-wwx" secondAttribute="leadingMargin" constant="-6" id="wtX-j6-8vf"/>
+                            <constraint firstItem="Y1U-1p-WuZ" firstAttribute="top" secondItem="6GR-2d-QYM" secondAttribute="bottom" constant="7" id="yV1-Jr-i1u"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="uih-it-Ljj">
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="qKD-kO-F0J"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="qKD-kO-F0J">
+                            <connections>
+                                <segue destination="Hgj-fK-joC" kind="unwind" identifier="save" unwindAction="unwindToNotesWithSegue:" id="bCe-hd-zRo"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="contentTextView" destination="Y1U-1p-WuZ" id="ZJw-yx-xtc"/>
+                        <outlet property="titleTextField" destination="Q6b-D5-mXD" id="Afx-hW-Xy9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aKB-M4-h4b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Hgj-fK-joC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="257" y="869"/>
+            <point key="canvasLocation" x="256.52173913043481" y="868.20652173913049"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="IAa-rA-Uvx">
@@ -430,7 +472,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Yzh-ez-fop"/>
         <segue reference="E9c-sk-aep"/>
+        <segue reference="Yzh-ez-fop"/>
     </inferredMetricsTieBreakers>
 </document>
