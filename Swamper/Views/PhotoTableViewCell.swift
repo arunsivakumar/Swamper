@@ -15,9 +15,14 @@ class PhotoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var photoImageView: UIImageView!
 
+    
+    var imageStore:ImageStore!
+    
     var photo:Photo?{
         didSet{
             if let photo = photo{
+                let photoKey = photo.photoKey
+                let image = imageStore.image(for: photoKey)
 //                photoImageView.image = photo.image
             }
         }
@@ -29,6 +34,7 @@ class PhotoTableViewCell: UITableViewCell {
     }
     override func awakeFromNib() {
         super.awakeFromNib()
+        photoImageView.clipsToBounds = true
         // Initialization code
     }
     
