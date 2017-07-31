@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		400ACCE51F2ED0A800B417A5 /* SketchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400ACCE41F2ED0A800B417A5 /* SketchCollectionViewCell.swift */; };
 		4040A0501F2E9AAF00621DD5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A04F1F2E9AAF00621DD5 /* Note.swift */; };
 		4040A0581F2E9B8F00621DD5 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4040A0571F2E9B8F00621DD5 /* Realm.framework */; };
 		4040A05A1F2E9B9200621DD5 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4040A0591F2E9B9200621DD5 /* RealmSwift.framework */; };
@@ -55,6 +56,7 @@
 		29918A9AA7FD2017589EF95D /* Pods_Swamper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swamper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		38C9D06272FEC9403BA77F89 /* Pods_SwamperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwamperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C61BF620E90AAE777825E34 /* Pods-SwamperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwamperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwamperUITests/Pods-SwamperUITests.release.xcconfig"; sourceTree = "<group>"; };
+		400ACCE41F2ED0A800B417A5 /* SketchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchCollectionViewCell.swift; sourceTree = "<group>"; };
 		4040A04F1F2E9AAF00621DD5 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		4040A0511F2E9AD600621DD5 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
 		4040A0531F2E9ADA00621DD5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
@@ -175,6 +177,7 @@
 			children = (
 				407D17BE1F2E9E9D00B3BAAE /* NotesCell.swift */,
 				407D17CA1F2EADF600B3BAAE /* PhotoCell.swift */,
+				400ACCE41F2ED0A800B417A5 /* SketchCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				407D17BD1F2E9CA600B3BAAE /* NotesViewController.swift in Sources */,
 				407D17C91F2EAD6100B3BAAE /* Photo.swift in Sources */,
 				408C53CF1F2DA2AC000E0214 /* AppDelegate.swift in Sources */,
+				400ACCE51F2ED0A800B417A5 /* SketchCollectionViewCell.swift in Sources */,
 				407D17C31F2EA48B00B3BAAE /* AddNotesViewController.swift in Sources */,
 				404872641F2E953600AC229C /* HomeViewController.swift in Sources */,
 				407D17C71F2EAC3600B3BAAE /* PhotosViewController.swift in Sources */,
