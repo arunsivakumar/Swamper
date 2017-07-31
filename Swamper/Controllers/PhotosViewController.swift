@@ -12,13 +12,9 @@ import Foundation
 import UIKit
 import RealmSwift
 
-
-import UIKit
-import RealmSwift
-
 class PhotosViewController: UIViewController{
     
-    var notes:Results<Note>!
+    var photos:Results<Photo>!
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -29,7 +25,7 @@ class PhotosViewController: UIViewController{
     }
     
     func loadData(){
-        notes = RealmHelper.fetchNotes()
+//        photos = RealmHelper.fetchPhotos()
     }
 }
 
@@ -39,12 +35,12 @@ extension PhotosViewController: UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notes.count
+        return photos.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "NotesCell", for: indexPath)  as! NotesCell
-        cell.note = notes[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PhotosCell", for: indexPath)  as! PhotosCell
+        cell.photo = photos[indexPath.row]
         return cell
     }
     
