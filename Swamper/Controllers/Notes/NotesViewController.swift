@@ -23,7 +23,6 @@ class NotesViewController: UIViewController{
         tableView.dataSource = notesDataSource
         tableView.delegate = self
         
-        
         loadData()
     }
     
