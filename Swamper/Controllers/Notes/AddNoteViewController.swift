@@ -64,9 +64,7 @@ extension AddNoteViewController{
          
             let vc =
                 segue.destination as! NotesViewController
-            vc.loadData()
-            
-        case "addNote"?: break
+            vc.loadData()            
         default:
             preconditionFailure("Unexpected segue identifier.")
         }
