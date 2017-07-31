@@ -12,9 +12,15 @@ import Foundation
 import UIKit
 import RealmSwift
 
+protocol DataSource:class{
+    func delete(indexPath:IndexPath)
+}
+
 class PhotosDataSource:NSObject,UITableViewDataSource{
     
     var photos:Results<Photo>!
+    
+    weak var delegate:DataSource?
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return photos.count
