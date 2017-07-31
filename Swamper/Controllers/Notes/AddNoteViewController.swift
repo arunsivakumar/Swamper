@@ -26,6 +26,10 @@ class AddNoteViewController: UIViewController{
         
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        view.endEditing(true)
+    }
+    
     func loadData(){
         if let note = note{
             titleTextField.text = note.title
@@ -51,6 +55,13 @@ class AddNoteViewController: UIViewController{
             RealmHelper.addNote(note: newNote)
         }
         
+    }
+}
+
+extension AddNoteViewController: UITextFieldDelegate{
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }
 
