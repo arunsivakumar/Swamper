@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NotesCell: UITableViewCell {
+class NoteTableViewCell: UITableViewCell {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var contentLabel: UILabel!

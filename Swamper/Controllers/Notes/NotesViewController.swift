@@ -26,22 +26,6 @@ class NotesViewController: UIViewController{
     }
 }
 
-//MARK:- Table View Data Source
-
-extension NotesViewController: UITableViewDataSource{
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notes.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-         let cell = tableView.dequeueReusableCell(withIdentifier: "NotesCell", for: indexPath)  as! NotesCell
-        cell.note = notes[indexPath.row]
-        return cell
-    }
-    
-}
 
 //MARK:- Table View Delegate
 

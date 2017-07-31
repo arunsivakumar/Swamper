@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		400ACCE51F2ED0A800B417A5 /* SketchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400ACCE41F2ED0A800B417A5 /* SketchCollectionViewCell.swift */; };
+		400ACCEF1F2ED21000B417A5 /* AddNoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400ACCE91F2ED21000B417A5 /* AddNoteViewController.swift */; };
+		400ACCF01F2ED21000B417A5 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400ACCEA1F2ED21000B417A5 /* NotesViewController.swift */; };
+		400ACCF11F2ED21000B417A5 /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400ACCEC1F2ED21000B417A5 /* PhotosViewController.swift */; };
+		400ACCF21F2ED21000B417A5 /* AddSketchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400ACCEE1F2ED21000B417A5 /* AddSketchViewController.swift */; };
+		400ACCF51F2ED36B00B417A5 /* PhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400ACCF41F2ED36B00B417A5 /* PhotosDataSource.swift */; };
+		400ACCF71F2ED37600B417A5 /* NotesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400ACCF61F2ED37600B417A5 /* NotesDataSource.swift */; };
+		400ACCF91F2ED38900B417A5 /* SketchesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400ACCF81F2ED38900B417A5 /* SketchesDataSource.swift */; };
 		4040A0501F2E9AAF00621DD5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A04F1F2E9AAF00621DD5 /* Note.swift */; };
 		4040A0581F2E9B8F00621DD5 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4040A0571F2E9B8F00621DD5 /* Realm.framework */; };
 		4040A05A1F2E9B9200621DD5 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4040A0591F2E9B9200621DD5 /* RealmSwift.framework */; };
@@ -16,14 +23,11 @@
 		404872601F2E94FC00AC229C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4048725F1F2E94FC00AC229C /* Main.storyboard */; };
 		404872641F2E953600AC229C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 404872621F2E953600AC229C /* HomeViewController.swift */; };
 		407D17BB1F2E9C2300B3BAAE /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D17BA1F2E9C2300B3BAAE /* RealmHelper.swift */; };
-		407D17BD1F2E9CA600B3BAAE /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D17BC1F2E9CA600B3BAAE /* NotesViewController.swift */; };
-		407D17BF1F2E9E9D00B3BAAE /* NotesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D17BE1F2E9E9D00B3BAAE /* NotesCell.swift */; };
+		407D17BF1F2E9E9D00B3BAAE /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D17BE1F2E9E9D00B3BAAE /* NoteTableViewCell.swift */; };
 		407D17C11F2EA3DD00B3BAAE /* NoteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D17C01F2EA3DD00B3BAAE /* NoteStore.swift */; };
-		407D17C31F2EA48B00B3BAAE /* AddNotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D17C21F2EA48B00B3BAAE /* AddNotesViewController.swift */; };
 		407D17C51F2EAB7800B3BAAE /* PhotoHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D17C41F2EAB7800B3BAAE /* PhotoHelper.swift */; };
-		407D17C71F2EAC3600B3BAAE /* PhotosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D17C61F2EAC3600B3BAAE /* PhotosViewController.swift */; };
 		407D17C91F2EAD6100B3BAAE /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D17C81F2EAD6100B3BAAE /* Photo.swift */; };
-		407D17CB1F2EADF600B3BAAE /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D17CA1F2EADF600B3BAAE /* PhotoCell.swift */; };
+		407D17CB1F2EADF600B3BAAE /* PhotoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407D17CA1F2EADF600B3BAAE /* PhotoTableViewCell.swift */; };
 		408C53CF1F2DA2AC000E0214 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 408C53CE1F2DA2AC000E0214 /* AppDelegate.swift */; };
 		408C53D61F2DA2AC000E0214 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 408C53D51F2DA2AC000E0214 /* Assets.xcassets */; };
 		408C53D91F2DA2AC000E0214 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 408C53D71F2DA2AC000E0214 /* LaunchScreen.storyboard */; };
@@ -57,6 +61,13 @@
 		38C9D06272FEC9403BA77F89 /* Pods_SwamperTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwamperTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C61BF620E90AAE777825E34 /* Pods-SwamperUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwamperUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwamperUITests/Pods-SwamperUITests.release.xcconfig"; sourceTree = "<group>"; };
 		400ACCE41F2ED0A800B417A5 /* SketchCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchCollectionViewCell.swift; sourceTree = "<group>"; };
+		400ACCE91F2ED21000B417A5 /* AddNoteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNoteViewController.swift; sourceTree = "<group>"; };
+		400ACCEA1F2ED21000B417A5 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
+		400ACCEC1F2ED21000B417A5 /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
+		400ACCEE1F2ED21000B417A5 /* AddSketchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddSketchViewController.swift; sourceTree = "<group>"; };
+		400ACCF41F2ED36B00B417A5 /* PhotosDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosDataSource.swift; sourceTree = "<group>"; };
+		400ACCF61F2ED37600B417A5 /* NotesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesDataSource.swift; sourceTree = "<group>"; };
+		400ACCF81F2ED38900B417A5 /* SketchesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchesDataSource.swift; sourceTree = "<group>"; };
 		4040A04F1F2E9AAF00621DD5 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		4040A0511F2E9AD600621DD5 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
 		4040A0531F2E9ADA00621DD5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
@@ -68,14 +79,11 @@
 		4048725F1F2E94FC00AC229C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		404872621F2E953600AC229C /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		407D17BA1F2E9C2300B3BAAE /* RealmHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
-		407D17BC1F2E9CA600B3BAAE /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
-		407D17BE1F2E9E9D00B3BAAE /* NotesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesCell.swift; sourceTree = "<group>"; };
+		407D17BE1F2E9E9D00B3BAAE /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
 		407D17C01F2EA3DD00B3BAAE /* NoteStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteStore.swift; sourceTree = "<group>"; };
-		407D17C21F2EA48B00B3BAAE /* AddNotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddNotesViewController.swift; sourceTree = "<group>"; };
 		407D17C41F2EAB7800B3BAAE /* PhotoHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoHelper.swift; sourceTree = "<group>"; };
-		407D17C61F2EAC3600B3BAAE /* PhotosViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosViewController.swift; sourceTree = "<group>"; };
 		407D17C81F2EAD6100B3BAAE /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
-		407D17CA1F2EADF600B3BAAE /* PhotoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		407D17CA1F2EADF600B3BAAE /* PhotoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTableViewCell.swift; sourceTree = "<group>"; };
 		408C53CB1F2DA2AC000E0214 /* Swamper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swamper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		408C53CE1F2DA2AC000E0214 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		408C53D51F2DA2AC000E0214 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -124,6 +132,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		400ACCE81F2ED21000B417A5 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				400ACCE91F2ED21000B417A5 /* AddNoteViewController.swift */,
+				400ACCEA1F2ED21000B417A5 /* NotesViewController.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
+		400ACCEB1F2ED21000B417A5 /* Photos */ = {
+			isa = PBXGroup;
+			children = (
+				400ACCEC1F2ED21000B417A5 /* PhotosViewController.swift */,
+			);
+			path = Photos;
+			sourceTree = "<group>";
+		};
+		400ACCED1F2ED21000B417A5 /* Sketch */ = {
+			isa = PBXGroup;
+			children = (
+				400ACCEE1F2ED21000B417A5 /* AddSketchViewController.swift */,
+			);
+			path = Sketch;
+			sourceTree = "<group>";
+		};
+		400ACCF31F2ED34C00B417A5 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				400ACCF41F2ED36B00B417A5 /* PhotosDataSource.swift */,
+				400ACCF61F2ED37600B417A5 /* NotesDataSource.swift */,
+				400ACCF81F2ED38900B417A5 /* SketchesDataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
 		404872551F2E948F00AC229C /* CustomItems */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,10 +207,10 @@
 		404872611F2E953600AC229C /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				400ACCE81F2ED21000B417A5 /* Notes */,
+				400ACCEB1F2ED21000B417A5 /* Photos */,
+				400ACCED1F2ED21000B417A5 /* Sketch */,
 				404872621F2E953600AC229C /* HomeViewController.swift */,
-				407D17BC1F2E9CA600B3BAAE /* NotesViewController.swift */,
-				407D17C21F2EA48B00B3BAAE /* AddNotesViewController.swift */,
-				407D17C61F2EAC3600B3BAAE /* PhotosViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -175,8 +218,8 @@
 		404872631F2E953600AC229C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				407D17BE1F2E9E9D00B3BAAE /* NotesCell.swift */,
-				407D17CA1F2EADF600B3BAAE /* PhotoCell.swift */,
+				407D17BE1F2E9E9D00B3BAAE /* NoteTableViewCell.swift */,
+				407D17CA1F2EADF600B3BAAE /* PhotoTableViewCell.swift */,
 				400ACCE41F2ED0A800B417A5 /* SketchCollectionViewCell.swift */,
 			);
 			path = Views;
@@ -217,6 +260,7 @@
 		408C53CD1F2DA2AC000E0214 /* Swamper */ = {
 			isa = PBXGroup;
 			children = (
+				400ACCF31F2ED34C00B417A5 /* DataSource */,
 				404872651F2E954100AC229C /* Models */,
 				404872611F2E953600AC229C /* Controllers */,
 				404872631F2E953600AC229C /* Views */,
@@ -558,21 +602,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				407D17CB1F2EADF600B3BAAE /* PhotoCell.swift in Sources */,
+				407D17CB1F2EADF600B3BAAE /* PhotoTableViewCell.swift in Sources */,
+				400ACCEF1F2ED21000B417A5 /* AddNoteViewController.swift in Sources */,
+				400ACCF71F2ED37600B417A5 /* NotesDataSource.swift in Sources */,
+				400ACCF21F2ED21000B417A5 /* AddSketchViewController.swift in Sources */,
 				407D17C11F2EA3DD00B3BAAE /* NoteStore.swift in Sources */,
 				4040A0501F2E9AAF00621DD5 /* Note.swift in Sources */,
 				407D17BB1F2E9C2300B3BAAE /* RealmHelper.swift in Sources */,
 				407D17C51F2EAB7800B3BAAE /* PhotoHelper.swift in Sources */,
 				4048725B1F2E948F00AC229C /* EntityButton.swift in Sources */,
-				407D17BD1F2E9CA600B3BAAE /* NotesViewController.swift in Sources */,
 				407D17C91F2EAD6100B3BAAE /* Photo.swift in Sources */,
 				408C53CF1F2DA2AC000E0214 /* AppDelegate.swift in Sources */,
+				400ACCF91F2ED38900B417A5 /* SketchesDataSource.swift in Sources */,
+				400ACCF11F2ED21000B417A5 /* PhotosViewController.swift in Sources */,
+				400ACCF51F2ED36B00B417A5 /* PhotosDataSource.swift in Sources */,
 				400ACCE51F2ED0A800B417A5 /* SketchCollectionViewCell.swift in Sources */,
-				407D17C31F2EA48B00B3BAAE /* AddNotesViewController.swift in Sources */,
+				400ACCF01F2ED21000B417A5 /* NotesViewController.swift in Sources */,
 				404872641F2E953600AC229C /* HomeViewController.swift in Sources */,
-				407D17C71F2EAC3600B3BAAE /* PhotosViewController.swift in Sources */,
 				4048725C1F2E948F00AC229C /* EntityView.swift in Sources */,
-				407D17BF1F2E9E9D00B3BAAE /* NotesCell.swift in Sources */,
+				407D17BF1F2E9E9D00B3BAAE /* NoteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

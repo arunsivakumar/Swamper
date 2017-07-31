@@ -1,5 +1,5 @@
 //
-//  AddNotesViewController.swift
+//  AddSketchViewController.swift
 //  Swamper
 //
 //  Created by Lakshmi on 7/30/17.
@@ -12,9 +12,9 @@ import Foundation
 import UIKit
 import RealmSwift
 
-class AddNotesViewController: UIViewController{
-
-
-
-
+class AddSketchViewController: UIViewController{
+    
+    
+    
+    
 }

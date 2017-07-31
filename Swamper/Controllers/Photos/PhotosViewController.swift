@@ -29,23 +29,6 @@ class PhotosViewController: UIViewController{
     }
 }
 
-//MARK:- Table View Data Source
-
-extension PhotosViewController: UITableViewDataSource{
-    
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return photos.count
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath)  as! PhotoCell
-        cell.photo = photos[indexPath.row]
-        return cell
-    }
-    
-}
-
 //MARK:- Table View Delegate
 
 extension PhotosViewController: UITableViewDelegate{

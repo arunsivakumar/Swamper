@@ -11,7 +11,7 @@ import Foundation
 
 import UIKit
 
-class PhotoCell: UITableViewCell {
+class PhotoTableViewCell: UITableViewCell {
     
     @IBOutlet weak var photoImageView: UIImageView!
 
