@@ -15,6 +15,8 @@
 		400ACCF51F2ED36B00B417A5 /* PhotosDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400ACCF41F2ED36B00B417A5 /* PhotosDataSource.swift */; };
 		400ACCF71F2ED37600B417A5 /* NotesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400ACCF61F2ED37600B417A5 /* NotesDataSource.swift */; };
 		400ACCF91F2ED38900B417A5 /* SketchesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400ACCF81F2ED38900B417A5 /* SketchesDataSource.swift */; };
+		401AD1751F2F0857008B1684 /* PhotoStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401AD1741F2F0857008B1684 /* PhotoStore.swift */; };
+		401AD1771F2F1E73008B1684 /* ImageStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401AD1761F2F1E73008B1684 /* ImageStore.swift */; };
 		4040A0501F2E9AAF00621DD5 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4040A04F1F2E9AAF00621DD5 /* Note.swift */; };
 		4040A0581F2E9B8F00621DD5 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4040A0571F2E9B8F00621DD5 /* Realm.framework */; };
 		4040A05A1F2E9B9200621DD5 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4040A0591F2E9B9200621DD5 /* RealmSwift.framework */; };
@@ -68,6 +70,8 @@
 		400ACCF41F2ED36B00B417A5 /* PhotosDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosDataSource.swift; sourceTree = "<group>"; };
 		400ACCF61F2ED37600B417A5 /* NotesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesDataSource.swift; sourceTree = "<group>"; };
 		400ACCF81F2ED38900B417A5 /* SketchesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SketchesDataSource.swift; sourceTree = "<group>"; };
+		401AD1741F2F0857008B1684 /* PhotoStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoStore.swift; sourceTree = "<group>"; };
+		401AD1761F2F1E73008B1684 /* ImageStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageStore.swift; sourceTree = "<group>"; };
 		4040A04F1F2E9AAF00621DD5 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		4040A0511F2E9AD600621DD5 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = "Pods/../build/Debug-iphoneos/RealmSwift/RealmSwift.framework"; sourceTree = "<group>"; };
 		4040A0531F2E9ADA00621DD5 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = "Pods/../build/Debug-iphoneos/Realm/Realm.framework"; sourceTree = "<group>"; };
@@ -231,6 +235,8 @@
 				4040A04F1F2E9AAF00621DD5 /* Note.swift */,
 				407D17C01F2EA3DD00B3BAAE /* NoteStore.swift */,
 				407D17C81F2EAD6100B3BAAE /* Photo.swift */,
+				401AD1741F2F0857008B1684 /* PhotoStore.swift */,
+				401AD1761F2F1E73008B1684 /* ImageStore.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -607,11 +613,13 @@
 				400ACCF71F2ED37600B417A5 /* NotesDataSource.swift in Sources */,
 				400ACCF21F2ED21000B417A5 /* AddSketchViewController.swift in Sources */,
 				407D17C11F2EA3DD00B3BAAE /* NoteStore.swift in Sources */,
+				401AD1771F2F1E73008B1684 /* ImageStore.swift in Sources */,
 				4040A0501F2E9AAF00621DD5 /* Note.swift in Sources */,
 				407D17BB1F2E9C2300B3BAAE /* RealmHelper.swift in Sources */,
 				407D17C51F2EAB7800B3BAAE /* PhotoHelper.swift in Sources */,
 				4048725B1F2E948F00AC229C /* EntityButton.swift in Sources */,
 				407D17C91F2EAD6100B3BAAE /* Photo.swift in Sources */,
+				401AD1751F2F0857008B1684 /* PhotoStore.swift in Sources */,
 				408C53CF1F2DA2AC000E0214 /* AppDelegate.swift in Sources */,
 				400ACCF91F2ED38900B417A5 /* SketchesDataSource.swift in Sources */,
 				400ACCF11F2ED21000B417A5 /* PhotosViewController.swift in Sources */,

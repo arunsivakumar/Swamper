@@ -160,8 +160,16 @@
                         <action selector="openNotes:" destination="BYZ-38-t0r" id="40e-iW-EtZ"/>
                     </connections>
                 </tapGestureRecognizer>
-                <tapGestureRecognizer id="pFj-gp-Zzw"/>
-                <tapGestureRecognizer id="9Ra-Lu-Ia4"/>
+                <tapGestureRecognizer id="pFj-gp-Zzw">
+                    <connections>
+                        <action selector="openPhotos:" destination="BYZ-38-t0r" id="WHY-WN-t05"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="9Ra-Lu-Ia4">
+                    <connections>
+                        <action selector="showSketches:" destination="BYZ-38-t0r" id="Sgq-4e-CJ7"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="896.79999999999995" y="-537.48125937031489"/>
         </scene>
@@ -186,7 +194,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="85"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xJg-q5-oAq" id="Dmy-u8-yJi">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="84.666666666666671"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="QjQ-Df-NPa">
@@ -259,7 +267,7 @@
         <!--Photos-->
         <scene sceneID="C9S-4T-Fgd">
             <objects>
-                <viewController id="yqO-0p-sJ3" sceneMemberID="viewController">
+                <viewController id="yqO-0p-sJ3" customClass="PhotosViewController" customModule="Swamper" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="EhN-GA-Rv6"/>
                         <viewControllerLayoutGuide type="bottom" id="Cc9-rN-vN9"/>
@@ -268,9 +276,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="291" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1en-vZ-Kki">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="291" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="1en-vZ-Kki">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PhotoTableViewCell" rowHeight="414" id="LHg-yx-EAA" customClass="PhotoTableViewCell" customModule="Swamper" customModuleProvider="target">
@@ -281,7 +288,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Uvv-vN-NS1">
-                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="413.66666666666669"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="414"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
@@ -291,6 +298,10 @@
                                                 <constraint firstAttribute="trailing" secondItem="Uvv-vN-NS1" secondAttribute="trailing" id="tse-zG-WQ2"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <constraints>
+                                            <constraint firstItem="Uvv-vN-NS1" firstAttribute="height" secondItem="LHg-yx-EAA" secondAttribute="height" id="T5S-Rm-fQb"/>
+                                            <constraint firstItem="Uvv-vN-NS1" firstAttribute="width" secondItem="LHg-yx-EAA" secondAttribute="width" id="YWL-Gl-TOf"/>
+                                        </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="Uvv-vN-NS1" id="WYm-K4-Sym"/>
                                             <outlet property="photoImageView" destination="Uvv-vN-NS1" id="JvJ-1K-2qi"/>
@@ -300,12 +311,24 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="1en-vZ-Kki" firstAttribute="top" secondItem="Uss-nu-B59" secondAttribute="top" id="J1d-tH-ajP"/>
+                            <constraint firstItem="1en-vZ-Kki" firstAttribute="bottom" secondItem="Cc9-rN-vN9" secondAttribute="top" id="p2f-DL-etf"/>
+                            <constraint firstAttribute="trailing" secondItem="1en-vZ-Kki" secondAttribute="trailing" id="qo9-Dg-Hf5"/>
+                            <constraint firstItem="1en-vZ-Kki" firstAttribute="leading" secondItem="Uss-nu-B59" secondAttribute="leading" id="sMq-Zg-UT2"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Photos" id="uDE-iF-Y5b">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="JGn-UJ-1xf">
                             <color key="tintColor" red="0.89338332409999999" green="0.61131191250000005" blue="0.357768476" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="addPhoto:" destination="yqO-0p-sJ3" id="1Uc-2M-Z8Y"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="1en-vZ-Kki" id="geW-cI-zF3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D7R-fM-iS6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
