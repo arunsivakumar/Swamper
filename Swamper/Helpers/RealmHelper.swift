@@ -30,4 +30,9 @@ class RealmHelper{
         let realm = try! Realm()
         return realm.objects(Note.self).sorted(byKeyPath: "updatedAt", ascending: false)
     }
+    
+    static func getNotesCount()-> Int{
+        let realm = try! Realm()
+        return realm.objects(Note.self).count
+    }
 }
