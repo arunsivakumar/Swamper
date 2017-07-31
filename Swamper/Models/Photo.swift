@@ -14,6 +14,6 @@ import RealmSwift
 
 class Photo: Object {
 
-    dynamic var image = UIImage()
+//    var image = UIImage()
     dynamic var updatedAt = NSDate()
 }

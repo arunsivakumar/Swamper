@@ -18,7 +18,7 @@ class PhotoTableViewCell: UITableViewCell {
     var photo:Photo?{
         didSet{
             if let photo = photo{
-                photoImageView.image = photo.image
+//                photoImageView.image = photo.image
             }
         }
     }

@@ -11,18 +11,24 @@ import RealmSwift
 
 class NotesViewController: UIViewController{
     
-    var notes:Results<Note>!
+    let notesDataSource = NotesDataSource()
     
     @IBOutlet weak var tableView: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.dataSource = notesDataSource
+        tableView.delegate = self
+        
+        
         loadData()
     }
     
     func loadData(){
-        notes = RealmHelper.fetchNotes()
+        self.notesDataSource.notes = RealmHelper.fetchNotes()
+        self.tableView.reloadData()
     }
 }
 
@@ -32,7 +38,9 @@ class NotesViewController: UIViewController{
 extension NotesViewController: UITableViewDelegate{
     
 
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 85.0
+    }
 }
 
 //MARK:- Navigation

@@ -17,6 +17,9 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var extraCountLabel: UILabel!
     @IBOutlet weak var freeCountLabel: UILabel!
     
+    @IBAction func openNotes(_ sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "showNotes", sender: self)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -13,6 +13,7 @@ class NotesDataSource:NSObject,UITableViewDataSource{
     
     var notes:Results<Note>!
     
+        
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return notes.count
     }
