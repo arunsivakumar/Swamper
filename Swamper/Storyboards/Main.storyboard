@@ -254,7 +254,8 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="imageView" destination="Uvv-vN-NS1" id="3qz-qP-1wd"/>
+                                            <outlet property="imageView" destination="Uvv-vN-NS1" id="WYm-K4-Sym"/>
+                                            <outlet property="photoImageView" destination="Uvv-vN-NS1" id="JvJ-1K-2qi"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

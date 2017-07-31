@@ -13,18 +13,18 @@ import UIKit
 
 class PhotoCell: UITableViewCell {
     
-    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var photoImageView: UIImageView!
 
     var photo:Photo?{
         didSet{
             if let photo = photo{
-                imageView.image = photo.image
+                photoImageView.image = photo.image
             }
         }
     }
     
     override func prepareForReuse() {
-//        imageView.image = nil
+        photoImageView.image = nil
         
     }
     override func awakeFromNib() {

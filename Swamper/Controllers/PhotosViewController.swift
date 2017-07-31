@@ -39,7 +39,7 @@ extension PhotosViewController: UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PhotosCell", for: indexPath)  as! PhotosCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PhotoCell", for: indexPath)  as! PhotoCell
         cell.photo = photos[indexPath.row]
         return cell
     }
