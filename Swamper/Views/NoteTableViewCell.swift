@@ -20,10 +20,17 @@ class NoteTableViewCell: UITableViewCell {
             if let note = note{
                 titleLabel.text = note.title
                 contentLabel.text = note.content
-                dateLabel.text = nil
+                dateLabel.text = dateFormatter.string(from: note.updatedAt as Date)
             }
         }
     }
+    
+    let dateFormatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateStyle = .medium
+        formatter.timeStyle = .none
+        return formatter
+    }()
     
     override func prepareForReuse() {
         titleLabel.text = nil
@@ -43,3 +50,4 @@ class NoteTableViewCell: UITableViewCell {
     }
 
 }
+
