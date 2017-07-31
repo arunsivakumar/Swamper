@@ -11,23 +11,24 @@ import RealmSwift
 
 class NotesDataSource:NSObject,UITableViewDataSource{
     
-    var notes:Results<Note>!
-     weak var delegate:DataSource?
+    var noteStore: NoteStore!
         
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return notes.count
+        return noteStore.notes.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "NoteTableViewCell", for: indexPath)  as! NoteTableViewCell
-        cell.note = notes[indexPath.row]
+        cell.note = noteStore.notes[indexPath.row]
         return cell
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         
         if editingStyle == .delete {
-            delegate?.delete(indexPath: indexPath)
+            let note = noteStore.notes[indexPath.row]
+            self.noteStore.removeNote(note: note)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
         }
     }
 }

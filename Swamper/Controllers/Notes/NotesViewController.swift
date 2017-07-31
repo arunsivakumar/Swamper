@@ -11,15 +11,15 @@ import RealmSwift
 
 class NotesViewController: UIViewController{
     
-    let notesDataSource = NotesDataSource()
+    var noteStore:NoteStore!
+    
+    fileprivate let notesDataSource = NotesDataSource()
     
     @IBOutlet weak var tableView: UITableView!
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        notesDataSource.delegate = self
         tableView.dataSource = notesDataSource
         tableView.delegate = self
         
@@ -27,10 +27,9 @@ class NotesViewController: UIViewController{
     }
     
     func loadData(){
-        self.notesDataSource.notes = RealmHelper.fetchNotes()
         self.tableView.reloadData()
     }
-
+    
     @IBAction func addNote(_ sender: Any) {
         
         performSegue(withIdentifier: "addNote", sender: self)
@@ -42,18 +41,12 @@ class NotesViewController: UIViewController{
 
 extension NotesViewController: UITableViewDelegate{
     
-
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 85.0
     }
 }
 
-extension NotesViewController: DataSource{
-    func delete(indexPath: IndexPath) {
-        RealmHelper.deleteNote(note: notesDataSource.notes[indexPath.row])
-        loadData()
-    }
-}
 
 //MARK:- Navigation
 extension NotesViewController{
@@ -65,7 +58,7 @@ extension NotesViewController{
             guard let indexPath = tableView.indexPathForSelectedRow else{ return }
             let vc =
                 segue.destination as! AddNoteViewController
-            vc.note = notesDataSource.notes[indexPath.row]
+            vc.note = noteStore.notes[indexPath.row]
         case "addNote"?: break
         default:
             preconditionFailure("Unexpected segue identifier.")
@@ -73,7 +66,7 @@ extension NotesViewController{
     }
     
     @IBAction func unwindToNotes(segue: UIStoryboardSegue) {
-                
+        
     }
     
     

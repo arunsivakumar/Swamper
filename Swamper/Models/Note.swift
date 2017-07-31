@@ -13,6 +13,5 @@ class Note: Object {
     dynamic var title = ""
     dynamic var content = ""
     dynamic var updatedAt = Date()
-    
-    
+
 }
