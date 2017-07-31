@@ -35,16 +35,20 @@ class AddNoteViewController: UIViewController{
     
     func saveChanges(){
         
+        let newNote = Note()
+        newNote.title = titleTextField.text ?? ""
+        newNote.content = contentTextView.text ?? ""
+        newNote.updatedAt = Date()
         
-        if let note = note{  // 1.Update
+        // 1.Update existing
+        
+        if let note = note{
+            RealmHelper.updateNote(for: note, using: newNote)
+        
+        // 2. Create Note
             
-        }else{  // 2. Create Note
-            let note = Note()
-            note.title = titleTextField.text ?? ""
-            note.content = contentTextView.text ?? ""
-            note.updatedAt = Date()
-            
-            RealmHelper.addNote(note: note)
+        }else{
+            RealmHelper.addNote(note: newNote)
         }
         
     }
