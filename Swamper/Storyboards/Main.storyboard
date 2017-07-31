@@ -138,8 +138,8 @@
                         <outlet property="notesCountLabel" destination="lt6-hn-WcJ" id="4mb-bN-Asz"/>
                         <outlet property="websitesCountLabel" destination="9rE-6r-A60" id="AHB-VF-evP"/>
                         <segue destination="qhk-am-XNM" kind="show" identifier="showNotes" id="0c5-TR-3ia"/>
-                        <segue destination="yqO-0p-sJ3" kind="show" id="znI-zg-TIy"/>
-                        <segue destination="l9L-Oi-Rae" kind="show" id="A5p-yr-NX3"/>
+                        <segue destination="yqO-0p-sJ3" kind="show" identifier="showPhotos" id="znI-zg-TIy"/>
+                        <segue destination="l9L-Oi-Rae" kind="show" identifier="showSketches" id="A5p-yr-NX3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
