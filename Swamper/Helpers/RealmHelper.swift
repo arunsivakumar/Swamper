@@ -11,38 +11,38 @@ import RealmSwift
 
 class RealmHelper{
     
-    static func addNote(note: Note) {
-        let realm = try! Realm()
-        try! realm.write() {
-            realm.add(note)
-        }
-    }
-    
-    static func deleteNote(note: Note) {
-        let realm = try! Realm()
-        try! realm.write() {
-            realm.delete(note)
-        }
-    }
-    
-    static func fetchNotes()-> Results<Note>{
-        
-        let realm = try! Realm()
-        return realm.objects(Note.self).sorted(byKeyPath: "updatedAt", ascending: false)
-    }
-    
-    static func getNotesCount()-> Int{
-        let realm = try! Realm()
-        return realm.objects(Note.self).count
-    }
-    
-    static func updateNote(for note: Note,using updatedNote:Note){
-        let realm = try! Realm()
-        try! realm.write() {
-            note.title = updatedNote.title
-            note.content = updatedNote.content
-            note.updatedAt = updatedNote.updatedAt
-        }
-
-    }
+//    static func addNote(note: Note) {
+//        let realm = try! Realm()
+//        try! realm.write() {
+//            realm.add(note)
+//        }
+//    }
+//    
+//    static func deleteNote(note: Note) {
+//        let realm = try! Realm()
+//        try! realm.write() {
+//            realm.delete(note)
+//        }
+//    }
+//    
+//    static func fetchNotes()-> Results<Note>{
+//        
+//        let realm = try! Realm()
+//        return realm.objects(Note.self).sorted(byKeyPath: "updatedAt", ascending: false)
+//    }
+//    
+//    static func getNotesCount()-> Int{
+//        let realm = try! Realm()
+//        return realm.objects(Note.self).count
+//    }
+//    
+//    static func updateNote(for note: Note,using updatedNote:Note){
+//        let realm = try! Realm()
+//        try! realm.write() {
+//            note.title = updatedNote.title
+//            note.content = updatedNote.content
+//            note.updatedAt = updatedNote.updatedAt
+//        }
+//
+//    }
 }
