@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-class NotesViewVontroller: UIViewController{
+class NotesViewController: UIViewController{
     
     var notes:Results<Note>!
     
@@ -28,7 +28,7 @@ class NotesViewVontroller: UIViewController{
 
 //MARK:- Table View Data Source
 
-extension NotesViewVontroller: UITableViewDataSource{
+extension NotesViewController: UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -45,14 +45,14 @@ extension NotesViewVontroller: UITableViewDataSource{
 
 //MARK:- Table View Delegate
 
-extension NotesViewVontroller: UITableViewDelegate{
+extension NotesViewController: UITableViewDelegate{
     
 
     
 }
 
 //MARK:- Navigation
-extension NotesViewVontroller{
+extension NotesViewController{
     
     
 }

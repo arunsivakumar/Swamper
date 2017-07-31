@@ -12,7 +12,7 @@ import Foundation
 import UIKit
 import RealmSwift
 
-class AddNotesViewVontroller: UIViewController{
+class AddNotesViewController: UIViewController{
 
 
 
