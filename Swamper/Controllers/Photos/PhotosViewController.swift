@@ -14,18 +14,48 @@ import RealmSwift
 
 class PhotosViewController: UIViewController{
     
-    var photos:Results<Photo>!
+    var photoStore: PhotoStore!
+    var imageStore: ImageStore!
+    
+    var photoHelper:PhotoHelper?
+    
+    let photosDataSource = PhotosDataSource()
     
     @IBOutlet weak var tableView: UITableView!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        photosDataSource.photoStore = self.photoStore
+        photosDataSource.imageStore = self.imageStore
+        
+        tableView.dataSource = photosDataSource
+        tableView.delegate = self
+
         loadData()
     }
     
     func loadData(){
 //        photos = RealmHelper.fetchPhotos()
+        
+//        self.photosDataSource.notes = RealmHelper.fetchPhotos()
+        self.tableView.reloadData()
+        
+    }
+    @IBAction func addPhoto(_ sender: UIBarButtonItem) {
+        photoHelper = PhotoHelper(viewController: self, callback: { (image) in
+            
+            guard let image = image else{
+             return
+            }
+            let photo = self.photoStore.createPhoto(image: image)
+            self.imageStore.setImage(image, for: photo.photoKey)
+            if let index = self.photoStore.photos.index(of: photo){
+                let indexPath = IndexPath(row: index, section: 0)
+                self.tableView.insertRows(at: [indexPath], with: .automatic)
+            }
+        })
     }
 }
 
@@ -33,12 +63,8 @@ class PhotosViewController: UIViewController{
 
 extension PhotosViewController: UITableViewDelegate{
     
-    
-    
-}
-
-//MARK:- Navigation
-extension PhotosViewController{
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return self.view.frame.width
+    }
     
 }
