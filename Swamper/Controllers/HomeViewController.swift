@@ -12,6 +12,7 @@ class HomeViewController: UIViewController {
     
     var photoStore = PhotoStore()
     var imageStore = ImageStore()
+    var noteStore = NoteStore()
     
     @IBOutlet weak var notesCountLabel: UILabel!
     @IBOutlet weak var websitesCountLabel: UILabel!
@@ -40,7 +41,7 @@ class HomeViewController: UIViewController {
     
     func updateCounts(){
         
-        notesCountLabel.text = String(RealmHelper.getNotesCount())
+        notesCountLabel.text = String(noteStore.getNotesCount())
     }
 }
 
@@ -51,7 +52,9 @@ extension HomeViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "showNotes"?:
-           break
+            let vc =
+                segue.destination as! NotesViewController
+            vc.noteStore = noteStore
         case "showPhotos"?:
             let vc =
                 segue.destination as! PhotosViewController

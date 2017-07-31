@@ -189,7 +189,7 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		4048725D1F2E94DC00AC229C /* Supportingfiles */ = {
+		4048725D1F2E94DC00AC229C /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
 				408C53CE1F2DA2AC000E0214 /* AppDelegate.swift */,
@@ -197,7 +197,7 @@
 				408C53D71F2DA2AC000E0214 /* LaunchScreen.storyboard */,
 				408C53DA1F2DA2AC000E0214 /* Info.plist */,
 			);
-			name = Supportingfiles;
+			name = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		4048725E1F2E94FC00AC229C /* Storyboards */ = {
@@ -273,7 +273,7 @@
 				4048725E1F2E94FC00AC229C /* Storyboards */,
 				404872551F2E948F00AC229C /* CustomItems */,
 				404872581F2E948F00AC229C /* Helpers */,
-				4048725D1F2E94DC00AC229C /* Supportingfiles */,
+				4048725D1F2E94DC00AC229C /* SupportingFiles */,
 			);
 			path = Swamper;
 			sourceTree = "<group>";
