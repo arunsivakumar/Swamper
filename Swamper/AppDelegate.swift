@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     let photoStore = PhotoStore()
+    let noteStore = NoteStore()
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -22,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let nvc = window!.rootViewController as! UINavigationController
         let vc = nvc.topViewController as! HomeViewController
         vc.photoStore = photoStore
+        vc.noteStore =  noteStore
         vc.imageStore = imageStore
         
         return true
