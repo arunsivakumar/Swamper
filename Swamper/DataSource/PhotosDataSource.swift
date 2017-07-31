@@ -12,9 +12,6 @@ import Foundation
 import UIKit
 import RealmSwift
 
-protocol DataSource:class{
-    func delete(indexPath:IndexPath)
-}
 
 class PhotosDataSource:NSObject,UITableViewDataSource{
     
