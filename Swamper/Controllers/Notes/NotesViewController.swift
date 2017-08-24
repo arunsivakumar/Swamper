@@ -66,7 +66,18 @@ extension NotesViewController{
     }
     
     @IBAction func unwindToNotes(segue: UIStoryboardSegue) {
-        
+        switch segue.identifier {
+        case "save"?:
+            
+            guard let indexPath = tableView.indexPathForSelectedRow else{ return }
+            let vc =
+                segue.destination as! AddNoteViewController
+            vc.note = noteStore.notes[indexPath.row]
+       
+        default:
+            preconditionFailure("Unexpected segue identifier.")
+        }
+
     }
     
     

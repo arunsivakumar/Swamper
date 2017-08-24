@@ -37,7 +37,7 @@ class AddNoteViewController: UIViewController{
         }
     }
     
-    func saveChanges(){
+    func getUpdatedNote() -> Note{
         
         let newNote = Note()
         newNote.title = titleTextField.text ?? ""
@@ -71,7 +71,7 @@ extension AddNoteViewController{
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "save"?:
-            saveChanges()
+            let updatedNote = getUpdatedNote()
          
             let vc =
                 segue.destination as! NotesViewController
